@@ -5,8 +5,31 @@ public abstract class Conta {
     protected String clientId;
     protected float saldo;
 
-    public abstract void sacar();
-    public abstract void depositar();
-    public abstract void consultarSaldo();
+    public abstract void sacar(float valor);
+    public abstract void depositarDinheiro(float valor);
+    public abstract float consultarSaldo();
 
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
+    }
+
+    public String getClientId() {
+        return clientId;
+    }
+
+    public void setClientId(String clientId) {
+        this.clientId = clientId;
+    }
+
+    public float getSaldo() {
+        return saldo;
+    }
+
+    public void setSaldo(float saldo) {
+        this.saldo = saldo;
+    }
 }

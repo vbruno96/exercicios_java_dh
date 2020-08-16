@@ -1,7 +1,7 @@
 package br.com.santander;
 
 public class Cliente {
-    private int id;
+    private String id;
     private String cpf;
     private String rg;
     private String firstName;
@@ -10,12 +10,19 @@ public class Cliente {
 
     public Cliente() {
     }
+    public Cliente(String id, String cpf, String rg, String firstName, String lastName) {
+        this.id = id;
+        this.cpf = cpf;
+        this.rg = rg;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
 
-    public int getId() {
+    public String getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(String id) {
         this.id = id;
     }
 
