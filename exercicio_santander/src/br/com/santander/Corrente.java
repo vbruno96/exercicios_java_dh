@@ -40,7 +40,7 @@ public class Corrente extends Conta {
         }
     }
 
-    public void depositarCheque(float valor, String bancoEmissor, Date dataPagamento) {
+    public void depositarCheque(float valor, String bancoEmissor, String dataPagamento) {
         float newSaldo = this.getSaldo() + valor;
         this.setSaldo(newSaldo);
         compencaChequeEspecial();

@@ -6,6 +6,13 @@ public class Poupanca extends Conta {
     public Poupanca() {
     }
 
+    public Poupanca(String id, String clientId, float saldo, float juros) {
+        this.id = id;
+        this.clientId = clientId;
+        this.saldo = saldo;
+        this.juros = juros;
+    }
+
     public void compensarjuros() {
         float newSaldo = (getJuros() * this.getSaldo()) + this.getSaldo();
         this.setSaldo(newSaldo);
