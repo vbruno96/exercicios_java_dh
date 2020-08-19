@@ -1,6 +1,5 @@
 package br.com.santander;
 
-import java.util.Date;
 
 public class Corrente extends Conta {
     private float chequeEspecial;
@@ -44,6 +43,7 @@ public class Corrente extends Conta {
         float newSaldo = this.getSaldo() + valor;
         this.setSaldo(newSaldo);
         compencaChequeEspecial();
+        System.out.println("Cheque emitido por: " +bancoEmissor+ "\nNo valor de R$" +valor+ "\nPagamento em: " +dataPagamento);
     }
 
     /* debita valor de saque de cheque especial */

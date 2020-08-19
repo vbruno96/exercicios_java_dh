@@ -1,7 +1,5 @@
 package br.com.santander;
 
-import java.util.ArrayList;
-
 public class Main {
     public static void main(String[] args) {
         Cliente[] clientes = new Cliente[2];
