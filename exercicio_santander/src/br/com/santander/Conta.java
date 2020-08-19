@@ -5,6 +5,9 @@ public abstract class Conta {
     protected String clientId;
     protected float saldo;
 
+    public Conta() {
+    }
+
     public abstract void sacar(float valor);
     public abstract void depositarDinheiro(float valor);
     public abstract float consultarSaldo();
